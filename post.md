@@ -53,7 +53,7 @@ Since we are only creating a 4-to-1 mux, we will only need 4 data lines and 2 se
 Following this, we move on to adding a arduino to a 4 to 1 mux. After connecting the Arduino to the mux using these connections
 
 
-``
+```
 const int S0[] = {0,0,1,1,0,0,1,1};
 const int S1[] = {0,0,0,0,1,1,1,1};
 const int A[] = {0,1,0,0,0,0,0,0};
@@ -113,7 +113,7 @@ Serial.print(": BAD\n");
 delay(WAIT1);
 index = (index+1) % 8; // increment index
 }
-``
+```
 
 Pin 10 Data input A (E0 on the mux)
 Pin 11 Data input B (E1 on the mux)
