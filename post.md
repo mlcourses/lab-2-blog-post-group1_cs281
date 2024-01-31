@@ -125,6 +125,10 @@ Pin 7 output data from mux (w on the mux)
 GND Connect the GND (adjacent to pin 13) to ground on the breadboard
 
 
+https://github.com/mlcourses/lab-2-blog-post-group1_cs281/assets/112486168/b0fa4a53-70c9-4d01-98df-d204a786c0db
+
+
+
 
 We type in a program to give ourselves predefined input and output values. The arrays S0,S1,A,B,C and D represent those inputs and Y represents the outputs. The function setup() initializes each pin for the arduino. The loop function iterates through all input combinations by first writing data and select line inputs to the MUX. Then it reads the output of the mux and displays it with the expected output indicating whether the output was the expected result. It then increments the index to loop through each combination.
 
