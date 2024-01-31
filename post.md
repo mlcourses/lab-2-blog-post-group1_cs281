@@ -133,6 +133,11 @@ We type in a program to give ourselves predefined input and output values. The a
 https://github.com/mlcourses/lab-2-blog-post-group1_cs281/assets/112486168/b0fa4a53-70c9-4d01-98df-d204a786c0db
 
 Lastly, we worked with an Adder Circuit. An Adder takes in two inputs and an Cin and takes two output Sum and Cout. Using a 7486,7408 and 7432 mux.
+
+
+https://github.com/mlcourses/lab-2-blog-post-group1_cs281/assets/112486168/860079cb-224c-4601-8829-0df5b879978d
+
+
 ## Testing
 
 ## Conclusion
