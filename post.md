@@ -42,10 +42,11 @@ We will not be building a 4-to-1 mux from scratch, using only logic gates. Inste
 
 <img width="395" alt="Screenshot 2024-01-30 at 10 03 15 PM" src="https://github.com/mlcourses/lab-2-blog-post-group1_cs281/assets/97915038/697f10e4-34da-432e-ae1e-45f1020d2d50">
 
-What's interesting about this IC chip is that the output of this chip is inverted, and that it has a special strobe pin (pin 9 on the diagram) that, for our purposes), must be wired to LOW power to work properly. Here is the wiring diagram:
+What's interesting about this IC chip is that the output of this chip is inverted, and that it has a special strobe pin (pin 9 on the diagram) that, for our purposes, must be wired to LOW power to work properly. Here is the wiring diagram:
 
 ![4 to 1 mux](https://github.com/mlcourses/lab-2-blog-post-group1_cs281/assets/97915038/e3084400-51b8-4379-9bd1-890051376a40)
 
+Since we are only creating a 4-to-1 mux, we will only need 4 data lines and 2 selector switches. Once again, we will be using the logical switches, with S1, S2 being selector switches and S5, S6, S7, S8 being our data lines.
 
 ## Testing
 
