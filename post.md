@@ -135,6 +135,6 @@ https://github.com/mlcourses/lab-2-blog-post-group1_cs281/assets/112486168/86007
 
 ## Conclusion
 
-
+This lab gives us hands on experience with digital design using 2 to 1 mux, 4 to 1 mux using a 74150 IC chip, testing a 4 to 1 mux with Arduino and designing a Adder circuit. The 2 to 1 mux shows how to implement AND, OR and NOT logic gates to create a certain function that we were able to understand through the logic indicators and switches. The incoporation of the 74150 IC chip and 4 to 1 mux allowed us to also see this but on a more complex level with careful consideration of unused select lines. Integrating an Arduino let us test the 4 to 1 with a microcontroller. The code tested multiple combinations of inputs and verified the output with expected results. Lastly creating an Addern illustrated the concept of binary math in relation to logic gates and digital circuits. These activities enhanced our abilities and understanding of digital circuits.
 
 
