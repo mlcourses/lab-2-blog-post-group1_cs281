@@ -50,6 +50,8 @@ What's interesting about this IC chip is that the output of this chip is inverte
 
 Since we are only creating a 4-to-1 mux, we will only need 4 data lines and 2 selector switches. Once again, we will be using the logical switches on the PB-503, with S1, S2 being selector switches and S5, S6, S7, S8 being our data lines. Note that since we are not using the 2 remaining selector switches (pin 11 and 13), they will be wired to LOW power.
 
+### 4-to-1 mux with Arduino
+
 Following this, we move on to adding a arduino to a 4 to 1 mux. After connecting the Arduino to the mux using these connections
 
 
