@@ -123,7 +123,11 @@ https://github.com/mlcourses/lab-2-blog-post-group1_cs281/assets/112486168/b0fa4
 
 ### Building an adder circuit
 
-Lastly, we worked with an Adder Circuit. An Adder takes in two inputs and an Cin and takes two output Sum and Cout. Using a 7486,7408 and 7432 mux.
+Lastly, we worked with an adder circuit. An adder takes in two input numbers and a Cin input (whether a bit was carried over from a previous addition, if any), and returns 2 output: their sum and whether it will carry a bit to the next addition, called Cout. The wiring diagram for the circuit is as follow:
+
+![adder](https://github.com/mlcourses/lab-2-blog-post-group1_cs281/assets/97915038/3bb7e565-5fb8-45ff-961e-679e71a514fd)
+
+Here is the video demonstrating the adder working:
 
 https://github.com/mlcourses/lab-2-blog-post-group1_cs281/assets/112486168/860079cb-224c-4601-8829-0df5b879978d
 
