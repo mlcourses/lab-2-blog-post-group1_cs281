@@ -39,7 +39,6 @@ https://github.com/mlcourses/lab-2-blog-post-group1_cs281/assets/97915038/d4a761
 
 ### Creating a 4-to-1 mux
 
-
 We will not be building a 4-to-1 mux from scratch, using only logic gates. Instead, we will use the 74150 IC chip - a 16-to-1 mux. It is similar to the 2-to-1 mux we built, but instead of 2 data lines, the 74150 chip has 16, and instead of only 1 selector switch, the chip has 4. Our goal for this mux is to have two switches for our selectors and four inputs. Each combination between the switches will result in a different output. We also must make sure that the unused select lines are doing something. The diagram for the chip is shown below:
 
 <img width="395" alt="Screenshot 2024-01-30 at 10 03 15 PM" src="https://github.com/mlcourses/lab-2-blog-post-group1_cs281/assets/97915038/697f10e4-34da-432e-ae1e-45f1020d2d50">
@@ -48,12 +47,13 @@ What's interesting about this IC chip is that the output of this chip is inverte
 
 ![4 to 1 mux](https://github.com/mlcourses/lab-2-blog-post-group1_cs281/assets/97915038/e3084400-51b8-4379-9bd1-890051376a40)
 
-Since we are only creating a 4-to-1 mux, we will only need 4 data lines and 2 selector switches. Once again, we will be using the logical switches on the PB-503, with S1, S2 being selector switches and S5, S6, S7, S8 being our data lines. Note that since we are not using the 2 remaining selector switches (pin 11 and 13), they will be wired to LOW power.
+Since we are only creating a 4-to-1 mux, we will only need 4 data lines and 2 selector switches. Once again, we will be using the logical switches on the PB-503, with S1, S2 being selector switches and S5, S6, S7, S8 being our data lines. Note that since we are not using the 2 remaining selector switches (pin 11 and 13), they will be wired to LOW power. The video below demonstrates the mux working as intended:
+
+https://github.com/mlcourses/lab-2-blog-post-group1_cs281/assets/97915038/71dbd482-cd5e-4ec1-b649-210bd8e2dad6
 
 ### 4-to-1 mux with Arduino
 
-Following this, we move on to adding a arduino to a 4 to 1 mux. After connecting the Arduino to the mux using these connections
-
+After seeing that our 4-to-1 mux works, we will replace the logic switches and indicator with an Arduino to verify input/output. After connecting the Arduino to the mux using these connections. On the Arduino, pins 10, 11, 12 and 13 will be our 4 data lines, pins 8 and 9 will be our selector switch, and pin 7 will receive output from the mux for verification. We will also connect the GND pin (adjacent to pin 13) to the board's GND, and then the following code will be loaded onto the Arduino:
 
 ```
 const int S0[] = {0,0,1,1,0,0,1,1};
@@ -117,25 +117,13 @@ index = (index+1) % 8; // increment index
 }
 ```
 
-Pin 10 Data input A (E0 on the mux)
-Pin 11 Data input B (E1 on the mux)
-Pin 12 Data input C (E2 on the mux)
-Pin 13 Data input D (E3 on the mux)
-Pin 8 Select Line 0 (A on the mux)
-Pin 9 Select Line 1 (B on the mux)
-Pin 7 output data from mux (w on the mux)
-GND Connect the GND (adjacent to pin 13) to ground on the breadboard
-
-
-
-
-
-We type in a program to give ourselves predefined input and output values. The arrays S0,S1,A,B,C and D represent those inputs and Y represents the outputs. The function setup() initializes each pin for the arduino. The loop function iterates through all input combinations by first writing data and select line inputs to the MUX. Then it reads the output of the mux and displays it with the expected output indicating whether the output was the expected result. It then increments the index to loop through each combination.
+The arrays S0,S1,A,B,C and D represent those inputs and Y represents the outputs. The function setup() initializes each pin for the Arduino. The loop function iterates through all input combinations by first writing data and select line inputs to the mux. Then it reads the output of the mux and displays it with the expected output indicating whether the output was the expected result. It then increments the index to loop through each combination.
 
 https://github.com/mlcourses/lab-2-blog-post-group1_cs281/assets/112486168/b0fa4a53-70c9-4d01-98df-d204a786c0db
 
-Lastly, we worked with an Adder Circuit. An Adder takes in two inputs and an Cin and takes two output Sum and Cout. Using a 7486,7408 and 7432 mux.
+### Building an adder circuit
 
+Lastly, we worked with an Adder Circuit. An Adder takes in two inputs and an Cin and takes two output Sum and Cout. Using a 7486,7408 and 7432 mux.
 
 https://github.com/mlcourses/lab-2-blog-post-group1_cs281/assets/112486168/860079cb-224c-4601-8829-0df5b879978d
 
