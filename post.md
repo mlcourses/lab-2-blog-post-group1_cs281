@@ -48,7 +48,7 @@ What's interesting about this IC chip is that the output of this chip is inverte
 
 ![4 to 1 mux](https://github.com/mlcourses/lab-2-blog-post-group1_cs281/assets/97915038/e3084400-51b8-4379-9bd1-890051376a40)
 
-Since we are only creating a 4-to-1 mux, we will only need 4 data lines and 2 selector switches. Once again, we will be using the logical switches, with S1, S2 being selector switches and S5, S6, S7, S8 being our data lines.
+Since we are only creating a 4-to-1 mux, we will only need 4 data lines and 2 selector switches. Once again, we will be using the logical switches on the PB-503, with S1, S2 being selector switches and S5, S6, S7, S8 being our data lines. Note that since we are not using the 2 remaining selector switches (pin 11 and 13), they will be wired to LOW power.
 
 Following this, we move on to adding a arduino to a 4 to 1 mux. After connecting the Arduino to the mux using these connections
 
@@ -138,7 +138,6 @@ Lastly, we worked with an Adder Circuit. An Adder takes in two inputs and an Cin
 https://github.com/mlcourses/lab-2-blog-post-group1_cs281/assets/112486168/860079cb-224c-4601-8829-0df5b879978d
 
 
-## Testing
 
 ## Conclusion
 
